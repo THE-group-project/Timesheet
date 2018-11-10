@@ -55,7 +55,8 @@ database.ref().on("child_added", function(childSnapshot, prevChildKey){
     var empStartPretty = moment.unix(empStart).format("MM/DD/YY");
     var empMonths = moment().diff(moment.unix(empStart, "X"), "months");
 
+    var empBilled = empMonths + empRate;
 
-
-
+    $("#employee-table > tbody").append("<tr><td>" + empName + "</td><td>" + empRole + "</td><td>" +
+ empStartPretty + "</td><td>" + empMonths + "</td><td>" + empRate + "</td><td>" + empBilled + "</td></tr>");
 });
