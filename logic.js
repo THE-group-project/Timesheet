@@ -8,6 +8,7 @@
     storageBucket: "esauer-project1.appspot.com",
     messagingSenderId: "380680122253"
   };
+
   firebase.initializeApp(config);
     var database = firebase.database();
     
@@ -35,6 +36,7 @@ $("#employee-name").val("");
 $("#role-input").val("");
 $("#start-input").val("");
 $("#rate-input").val("");
+$("#")
 
 });
 
@@ -56,5 +58,4 @@ database.ref().on("child_added", function(childSnapshot, prevChildKey){
 
 
 
-}
-
+});
