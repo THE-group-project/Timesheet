@@ -28,5 +28,33 @@
   console.log(newEmp);
   console.log("click");
   database.ref().push(newEmp);
+
+  alert("Employee added");
+
+$("#employee-name").val("");
+$("#role-input").val("");
+$("#start-input").val("");
+$("#rate-input").val("");
+
 });
+
+database.ref().on("child_added", function(childSnapshot, prevChildKey){
+
+    var empName = childSnapshot.val().name;
+    var empRole = childSnapshot.val().role;
+    var empStart = childSnapshot.val().start;
+    var empRate = childSnapshot.val().rate;
+
+    console.log(empName);
+    console.log(empRole);
+    console.log(empStart);
+    console.log(empRate);
+
+    var empStartPretty = moment.unix(empStart).format("MM/DD/YY");
+    var empMonths = moment().diff(moment.unix(empStart, "X"), "months");
+
+
+
+
+}
 
