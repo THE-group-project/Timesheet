@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Employee Data Management</title>
+</head>
+<body>
+      <div class = "jumbotron text-center">
+            <h1 class = "display-2">
+                Employee Data Managament
+            </h1>
+            <h2>
+                A Comprehensive Directory Of Employee Billable Hours
+            </h2>
+        </div>
+        <div class = "card container my-5">
+            <div class= "card-head bg-info">
+                <p class="text-center display-4">
+                    Current Employees
+                </p>
+                </div>
+                <div class = "table col-10">
+                <table class="table">
+                    <thead>
+                        <tr>
+                        <th scope="col">
+                            Employee Name
+                        </th>
+                        <th scope="col">
+                            Role
+                        </th>
+                        <th scope="col">
+                            Start Date
+                        </th>
+                        <th scope="col">
+                            Months Worked
+                        </th>
+                        <th scope="col">
+                            Monthly Rate ($)
+                        </th>
+                        <th scope="col">
+                            Total Billed ($)
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>
+                            
+                        </td>
+                        <td>
+                            
+                        </td>
+                        <td>
+                            
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class= "card container my-5">
+        <div class = "card-head bg-info">
+            <p class="text-center display-4">
+                Add Employee
+            </p>
+        </div>
+        <!-- Special version of Bootstrap that only affects content wrapped in .bootstrap-iso -->
+        <link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" /> 
+        <!-- Inline CSS based on choices in "Settings" tab -->
+        <style>.bootstrap-iso .formden_header h2, .bootstrap-iso .formden_header p, .bootstrap-iso form{font-family: Arial, Helvetica, sans-serif; color: black}.bootstrap-iso form button, .bootstrap-iso form button:hover{color: white !important;} .asteriskField{color: red;}</style>
+        <!-- HTML Form (wrapped in a .bootstrap-iso div) -->
+        <div class="bootstrap-iso">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <form method="post">
+                                <div class="form-group ">
+                                        <label class="control-label " for="name">
+                                            Employee Name
+                                        </label>
+                                        <input class="form-control" id="name" name="name" type="text"/>
+                                    </div>
+                                    <div class="form-group ">
+                                        <label class="control-label " for="email">
+                                            Role
+                                        </label>
+                                        <input class="form-control" id="email" name="email" type="text"/>
+                                    </div>
+                                    <div class="form-group ">
+                                        <label class="control-label " for="subject">
+                                            Start Date (DD/MM/YY ex. 01/01/89)
+                                        </label>
+                                        <input class="form-control" id="subject" name="subject" type="text"/>
+                                    </div>
+                                    <div class="form-group ">
+                                        <label class="control-label " for="message">
+                                            Monthly Rate
+                                        </label>
+                                        <textarea class="form-control" cols="40" id="message" name="message" rows="10"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <div>
+                                            <button class="btn btn-primary " name="submit" type="submit">
+                                                Submit
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
